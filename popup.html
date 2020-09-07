@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hi </title>
+    <link rel="stylesheet" href="./popup.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <p class="title">屏蔽的用户名：</p>
+        <div class="keyword-list" id="keyword_list"></div>
+
+        <p class="title">屏蔽样式：</p>
+        <div class="style-list" id="style_list">
+            <div class="btn list-item" data-type="hide">
+                <span class="icon active">√</span>
+                <span>隐藏</span>
+            </div>
+            <div class="btn list-item" data-type="grey">
+                <span class="icon">√</span>
+                <span>变灰</span>
+            </div>
+        </div>
+
+        <div class="input-content">
+            <input type="text" id="input" placeholder="输入屏蔽的用户名">
+            <span class="btn" id="add_btn">添加</span>
+        </div>
+
+    </div>
+
+
+    <script src="./popup.js"></script>
+    
+</body>
+</html>

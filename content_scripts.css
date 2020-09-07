@@ -1,0 +1,10 @@
+.czw-hide{
+    display: none;
+}
+
+.czw-grey{
+    filter: grayscale(1);
+    opacity: .5;
+    background: #bbb;
+    pointer-events: none;
+}

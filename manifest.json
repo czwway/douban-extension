@@ -1,0 +1,43 @@
+{
+    "name": "豆瓣小组组手",
+    "version": "1.0.0.0",
+    "manifest_version": 2,
+    "description": "根据用户名进行屏蔽处理",
+    "permissions": [
+        "activeTab",
+        "declarativeContent",
+        "storage",
+        "*://*/*",
+        "tabs",
+        "contextMenus"
+    ],
+    "homepage_url": "http://www.wshow.xyz",
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.douban.com/group/*"
+            ],
+            "js": [
+                "content_scripts.js"
+            ],
+            "css": [
+                "content_scripts.css"
+            ]
+        }
+    ],
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/get_started16.png",
+            "32": "images/get_started16.png",
+            "48": "images/get_started16.png",
+            "128": "images/get_started16.png"
+        }
+    }
+}
